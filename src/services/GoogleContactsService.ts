@@ -28,8 +28,8 @@ class GoogleContactsService {
       const tokenPath = path.resolve(TOKEN_PATH);
       if (!fs.existsSync(tokenPath)) {
         logger.error(`OAuth token file not found: ${tokenPath}`);
-        logger.error(`Run "yarn auth-google" to authenticate first`);
-        throw new Error(`OAuth token file not found. Run "yarn auth-google" to authenticate first.`);
+        logger.error("Run 'yarn auth-google' to authenticate first");
+        throw new Error("OAuth token file not found. Run 'yarn auth-google' to authenticate first.");
       }
 
       // Load token from file
