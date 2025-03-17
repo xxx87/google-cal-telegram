@@ -87,3 +87,4 @@ dist
 .vscode
 # PERSONAL
 # package-lock.json
+credentials.json
