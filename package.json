@@ -8,18 +8,23 @@
     "dev": "nodemon src/index.ts",
     "build": "tsc",
     "lint": "eslint src/**/*.ts",
-    "format": "prettier --write \"src/**/*.ts\""
+    "format": "prettier --write \"src/**/*.ts\"",
+    "auth-google": "ts-node src/auth-google.ts",
+    "check-setup": "ts-node src/check-setup.ts"
   },
   "dependencies": {
     "dotenv": "^16.4.7",
     "google-auth-library": "^9.6.3",
     "googleapis": "^144.0.0",
+    "node-cron": "^3.0.3",
     "node-schedule": "^2.1.1",
     "node-telegram-bot-api": "^0.66.0",
-    "ts-node": "^10.9.2"
+    "ts-node": "^10.9.2",
+    "winston": "^3.17.0"
   },
   "devDependencies": {
     "@types/node": "^20.11.19",
+    "@types/node-cron": "^3.0.11",
     "@types/node-schedule": "^2.1.7",
     "@types/node-telegram-bot-api": "^0.64.7",
     "@typescript-eslint/eslint-plugin": "^7.0.1",

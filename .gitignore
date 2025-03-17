@@ -88,3 +88,5 @@ dist
 # PERSONAL
 # package-lock.json
 credentials.json
+oauth-credentials.json
+google-token.json
